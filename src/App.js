@@ -31,7 +31,7 @@ function App() {
   }
   return (
     <div>
-      <h1 className='title'>Random Quote App</h1>
+      <h1 className='title'><strong>Random Quote App</strong></h1>
       <div className="container">
         <div className="quote" id="quote-box">
           <div id="text">{quote}</div>
