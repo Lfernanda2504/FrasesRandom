@@ -15,7 +15,6 @@ function App() {
         (quote) => {
           setQuote(quote.content);
           setAuthor(quote.author);
-          console.log(quote);
         }
       )
   }, []);
@@ -39,11 +38,11 @@ function App() {
         </div>
         <div className="container-fluid text-center">
           <div className="row">
-            <div className="col-6 col-ms-3">
+            <div className="col-6 md-1">
             <button id="new-quote" onClick={NewQuote}>Generate New Quote</button>
             </div>
-            <div className="col-6 col-ms-3">
-            <a  id="tweet-quote" href={`https://twitter.com/intent/tweet?text=${quote} -${author}-`} target="_blank">
+            <div className="col-6 md-1">
+            <a  id="tweet-quote" href={`https://twitter.com/intent/tweet?text=${quote} -${author}-`} target="_blank"  rel="noopener noreferrer">
             <FiTwitter></FiTwitter>
               </a>
             </div>
